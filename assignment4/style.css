@@ -88,13 +88,16 @@ p{
 }
 
 .charas{
-    text-align: center;
+    text-align: center;   
 }
 
 .ran{
-    font-family: "Comic Sans MS", cursive, sans-serif;    
-    font-size: 20px;
     color: rgb(219, 80, 110);
+}
+.ran p{
+    font-family: 'cute'; 
+    font-size: 23px;
+
 }
 .ran img{
     width: 120px;
@@ -103,8 +106,6 @@ p{
 }
 
 .miki{
-    font-family: "Comic Sans MS", cursive, sans-serif;    
-    font-size: 20px;
     color: rgb(62, 101, 200);
 }
 .miki img{
@@ -112,9 +113,13 @@ p{
     height: 120px;
     border-radius: 90%;
 }
+.miki p{
+    font-size: 23px;
+
+    font-family: 'cute'; 
+}
 
 .su{
-    font-family: "Comic Sans MS", cursive, sans-serif;    
     font-size: 20px;
     color: rgb(52, 134, 52);
 }
@@ -122,6 +127,10 @@ p{
     width: 120px;
     height: 120px;
     border-radius: 90%;
+}
+.su p{
+    font-family: 'cute'; 
+    font-size: 23px;
 }
 
 .guardian{

@@ -4,11 +4,11 @@ body{
     padding-right: 40px;}
 @font-face {
     font-family: 'cute';
-    src: url(../Font/Cute.ttf);
+    src: url(../font/Cute.ttf);
 }
 @font-face{
     font-family: 'heading';
-    src: url(../Font/cloud2.ttf);
+    src: url(../font/cloud2.ttf);
 }
 
 h1{

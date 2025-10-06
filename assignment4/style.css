@@ -1,0 +1,175 @@
+body{
+    background: linear-gradient(to bottom, pink, rgb(251, 138, 157));
+    padding-left: 40px;
+    padding-right: 40px;}
+@font-face {
+    font-family: 'cute';
+    src: url(../Font/Cute.ttf);
+}
+@font-face{
+    font-family: 'heading';
+    src: url(../Font/cloud2.ttf);
+}
+
+h1{
+    color: rgb(251, 138, 157);
+    text-align: center;
+    font-family:'heading';
+    font-size: 45px;
+}
+
+h4{
+    color: rgb(175, 41, 41);
+}
+h2{
+    font-family:'heading';
+    font-size: 30px;
+}
+
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;    
+    font-size: 20px;
+}
+.amu{
+    color:rgb(255, 0, 72);
+}
+.a{
+    text-align: center;
+}
+.a p{
+    font-family: 'cute';
+    font-size: 23px;
+    color:rgb(255, 0, 72);
+}
+.a img{
+    border-radius: 30px;
+}
+
+.e{
+    background-color: rgb(255, 220, 247);
+    border-radius: 4px; 
+    padding: 0 4px; 
+}
+
+.i{
+    color:rgb(19, 19, 159);
+}
+.ikuto{
+    text-align: center;
+}
+.ikuto p{
+    font-family: 'cute';
+    font-size: 23px;
+    color:rgb(19, 19, 159);
+}
+.ikuto img{
+    width:70%;
+    border-radius: 30px;
+}
+
+.yoru{
+    color:rgb(89, 43, 226);
+}
+
+.d{
+    color:rgb(252, 205, 103);
+}
+.dia{
+    text-align: center;
+}
+.dia p{
+    font-family:'cute';
+    font-size: 25px;
+    color:rgb(252, 205, 103);
+}
+.dia img{
+    width:70%;
+    border-radius: 30px;
+}
+
+.charas{
+    text-align: center;
+}
+
+.ran{
+    font-family: "Comic Sans MS", cursive, sans-serif;    
+    font-size: 20px;
+    color: rgb(219, 80, 110);
+}
+.ran img{
+    width: 120px;
+    height: 120px;
+    border-radius: 90%;
+}
+
+.miki{
+    font-family: "Comic Sans MS", cursive, sans-serif;    
+    font-size: 20px;
+    color: rgb(62, 101, 200);
+}
+.miki img{
+    width: 120px;
+    height: 120px;
+    border-radius: 90%;
+}
+
+.su{
+    font-family: "Comic Sans MS", cursive, sans-serif;    
+    font-size: 20px;
+    color: rgb(52, 134, 52);
+}
+.su img{
+    width: 120px;
+    height: 120px;
+    border-radius: 90%;
+}
+
+.guardian{
+    font-family:'cute';
+}
+
+.g{
+    text-align: center;
+    padding: 0;         
+}
+
+.t p{
+    font-family:'cute';
+    font-size: 23px;
+    color: rgb(245, 241, 130);
+}
+.t img{
+    width: 60%;
+    border-radius: 30px;
+}
+
+
+.k p{
+    font-family:'cute';
+    font-size: 23px;
+    color: rgb(52, 134, 52);;
+}
+.k img{
+    width: 60%;
+    border-radius: 30px;
+}
+
+.n p{
+    font-family:'cute';
+    font-size: 23px;
+    color: rgb(147, 64, 147);
+}
+.n img{
+    width: 60%;
+    border-radius: 30px;
+}
+
+.y p{
+    font-family:'cute';
+    font-size: 23px;
+    color:rgb(228, 124, 32);
+}
+.y img{
+    width: 60%;
+    border-radius: 30px;
+}

@@ -1,0 +1,191 @@
+body{
+    background: url("../asset/5/sky.png");
+    background-size: 100%;
+}
+.flags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  align-items: center; /* vertically align flags in their row */
+  justify-items: center; /* horizontally center each flag */
+  margin-top: 300px;
+  gap: 40px; 
+}
+/* Each flag + pole wrapper */
+.flag-container {
+  position: relative;
+  display: inline-block;
+}
+/* The pole itself */
+.pole {
+  position: absolute;
+  bottom: 0;
+  width: 20px;   /* thickness of the pole */
+  height: 60%;
+  background: linear-gradient(to right, silver, gray);
+  border-radius: 2px;
+}
+.title{
+  text-align: center;
+}
+.france {
+  position: relative;
+  width: 435px;
+  height: 272px;
+  /* margin: 10px 0 0 900px; */
+  background: white; /* Middle stripe */
+}
+.france::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 100%;
+    background: #0055A4; 
+}
+.france::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.33%;
+    height: 100%;
+    background: #EF4135; 
+}
+
+.china {
+    position: relative;
+    width: 435px;
+    height: 272px;
+    background: #DE2910;
+}
+  /* big star */
+  .star {
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    display: block;
+    color: #FFDE00;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #FFDE00; 
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+  }
+  .star::before {
+    border-bottom: 40px solid #FFDE00; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -22.5px;
+    left: -32.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .star::after {
+    position: absolute;
+    display: block;
+    color: #FFDE00;
+    top: 1.5px;
+    left: -52.5px;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #FFDE00; 
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+  /* small stars */
+  .small1, .small2, .small3, .small4 {
+    position: absolute;
+    display: block;
+    color: #FFDE00;
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 8px solid #FFDE00; 
+    border-left: 12px solid transparent;
+    transform: rotate(35deg);
+  }
+  .small1::before, .small2::before, .small3::before, .small4::before {
+    border-bottom: 9px solid #FFDE00; 
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -5px;
+    left: -7.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .small1::after, .small2::after, .small3::after, .small4::after {
+    position: absolute;
+    display: block;
+    color: #FFDE00;
+    top: 0.3px;
+    left: -12.5px;
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 8px solid #FFDE00;
+    border-left: 12px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  /* positioning */
+  .small1 {
+    top: 23px;
+    left: 135px;
+    transform: rotate(55deg);
+  }
+  .small2 {
+    top: 51px;
+    left: 161px;
+    transform: rotate(20deg);
+  }
+  .small3 {
+    top: 90px;
+    left: 158px;
+  }
+  .small4 {
+    top: 120px;
+    left: 134px;
+    transform: rotate(-20deg);
+  }
+  
+  .canada {
+    position: relative;
+    width: 450px;
+    height: 272px;
+    margin-top: -300px;
+    background-color: white;
+    background-image: url("../asset/5/leaf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130px;  
+  }
+  .canada::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 27%;
+      height: 100%;
+      background: red; 
+  }
+  .canada::after {content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 27%;
+    height: 100%;
+    background: red;
+  }

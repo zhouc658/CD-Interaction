@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'p';
+    src: url(../font/play.ttf);
+}
+body {
+    background: radial-gradient(circle at center, #9dd38b, #7da96e);
+    font-family: 'Georgia', serif;
+    color: #3b2f2f;
+    text-align: center;
+    margin-top: 150px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    color:rgb(212, 237, 210);
+    font-size: 20px;
+    background: linear-gradient(to bottom, rgb(112, 190, 112), rgb(45, 131, 45));
+    border-radius: 18px;  /* Make corners more rounded */
+    padding: 15px 15px;  /* Increase padding for a larger button */
+}
+.red{
+    text-decoration: none;
+    display: inline-block;
+    color:rgb(226, 5, 5);
+    font-size: 17px;
+    font-family: "p";
+}
+.red:hover{
+    transform: translateY(-3px);
+    color:rgb(174, 23, 23);
+    font-size: 20px;
+}
+.word{
+    color:rgb(226, 5, 5);
+    display: inline-block;
+    font-size: 17px;
+    font-family: "p";
+}
+.word:hover {
+    transform: translateY(-3px);
+    color:rgb(174, 23, 23);
+    font-size: 20px;
+}
+.f {
+    color:rgb(226, 5, 5);
+    display: inline-block;
+    transform: rotate(25deg);
+    position: relative;
+    bottom:110px;
+    right: 290px; /* move right */
+  }
+  
+  .t {
+    color:rgb(226, 5, 5);
+    display: inline-block;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 110px; /* move left */
+  }
+  
+.w{
+    color:rgb(226, 5, 5);
+    display: inline-block;
+    transform: rotate(15deg);
+    position: relative;
+    left: 190px;
+    bottom:60px;
+}
+.find{
+    color:rgb(226, 5, 5);
+    display: inline-block;
+    transform: rotate(-15deg);
+    position: relative;
+    top:40px;
+    right: 390px; /* move right */
+}
+.way{
+    color:rgb(226, 5, 5);
+    display: inline-block;
+    transform: rotate(15deg);
+    position: relative;
+    left: 240px;
+    top: 120px;
+}
+@media screen and (max-width: 500px) {
+    body {
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .red, .word {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    .f {
+        bottom: 30px;
+        right: 50px;
+    }
+    .t {
+        left: 30px;
+    }
+    .w {
+        left: 50px;
+        bottom: 15px;
+    }
+    .find {
+        top: 10px;
+        right: 80px;
+    }
+    .way {
+        left: 70px;
+        top: 30px;
+    }
+}

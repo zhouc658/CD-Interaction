@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'p';
+    src: url(../font/play.ttf);
+}
+body {
+    background: linear-gradient(to right, #f5e7b2, #e3ca6e) ;
+    font-family: 'Georgia', serif;
+    color: #3b2f2f;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+p{
+    text-align: center;
+    font-size: 22px;
+}
+
+.word{
+    color:rgb(189, 0, 0);
+}
+.btn {
+    background: linear-gradient(to right, #f9f5ef, #e9e1d5);
+    border-radius: 8px;  /* Make corners more rounded */
+    padding: 10px; 
+    text-decoration: none;
+    color: #101010;
+    position: fixed; 
+    bottom: 20px;          
+    left: 20px;
+    font-size: 20px;
+}
+.btn:hover {
+    font-family: "p";
+    background: #f0e7db;
+    font-size: 18px;
+}
+
+/* this applies only to small screens */
+@media screen and (max-width: 500px) {
+    body {
+      background: linear-gradient(to right,rgb(229, 142, 66), rgb(232, 208, 86) );
+      margin-top: 100px;
+    }
+    p {
+        color: rgb(69, 61, 61);
+        font-size: 19px; /* Make text smaller */
+        width: 90%; /* Paragraph narrower for mobile screens */
+        margin: 0 auto; /* Center horizontally */
+      }
+  }
+  
+

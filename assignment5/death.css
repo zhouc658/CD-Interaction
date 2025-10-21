@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'p';
+    src: url(../font/play.ttf);
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(58, 58, 173), skyblue);
+    font-family: "Georgia", serif;
+    color: #3a2a1e;
+  }
+
+  /* Bigger hexagon */
+  .hexagon {
+    width: 505px;
+    height: 346px; /* 600 * 0.57735 */
+    background: linear-gradient(135deg, #ebdfb1, #bfa26b);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    animation: fadeOut 45s forwards;
+
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+  100% { opacity: 0; }
+    }
+  /* Top triangle */
+  .hexagon::before {
+    content: "";
+    position: absolute;
+    top: -173px; /* half of height * 0.5 */
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 173px solid #d6c19c;
+  }
+  
+  /* Bottom triangle */
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -173px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-top: 173px solid #bfae6b;
+  }
+  
+  /* Optional text inside */
+  .hexagon p {
+    position: relative;
+    max-width: 80%;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+
+  .word{
+    color:rgb(179, 0, 0);
+  }
+  .blue{
+    color:rgb(58, 58, 173);
+    text-decoration: none;
+    display: inline-block;
+    font-family: "p";
+  }
+
+.blue:hover{
+    transform: translateY(-3px);
+    color:rgb(102, 102, 235);
+    font-size: 26px;
+    font-family: "p";
+}
+.btn {
+  background: linear-gradient(to right, #f9f5ef, #e9e1d5);
+  border-radius: 8px;  /* Make corners more rounded */
+  padding: 10px; 
+  text-decoration: none;
+  color: #101010;
+  position: fixed; 
+  bottom: 20px;          
+  left: 20px;
+  font-size: 20px;
+}
+.btn:hover {
+  font-family: "p";
+  background: #f0e7db;
+  font-size: 18px;
+}
+@media screen and (max-width: 600px) {
+    body{
+        background: linear-gradient(to bottom, rgb(173, 58, 58), skyblue);
+    }
+  .hexagon {
+    width: 310px;      
+    height: 205px;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ebb1b1, #bf6b6b);
+  }
+  .hexagon::before {
+    top: -100px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 100px solid #d69c9c;
+  }
+  .hexagon::after {
+    bottom: -100px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-top: 100px solid #bf6b6b;
+  }
+  .hexagon p {
+    font-size: 10px;
+    max-width: 90%;
+  }
+  .blue:hover{
+    transform: translateY(-3px);
+    color:rgb(102, 102, 235);
+    font-size: 13px;
+    font-family: "p";
+}
+.btn{
+  font-size: 15px;
+}
+.btn:hover{
+  font-size: 13px;
+
+}
+}

@@ -1,7 +1,8 @@
 body{
     background: linear-gradient(to bottom, pink, rgb(251, 138, 157));
     padding-left: 40px;
-    padding-right: 40px;}
+    padding-right: 40px;
+}
 @font-face {
     font-family: 'cute';
     src: url(../font/Cute.ttf);

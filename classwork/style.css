@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'cute';
+    src: url(../font/caveat.ttf);
+}
+@font-face{
+    font-family: 'heading';
+    src: url(../font/Chewy.ttf);
+}
+@font-face{
+    font-family: 'special';
+    src: url(../font/Cute.ttf);
+}
+body{
+    background: pink;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h1{
+    color: rgb(253, 122, 143);
+    text-align: center;
+    font-family:'heading';
+    font-size: 45px;
+}
+h2{
+    color: rgb(253, 107, 131);
+    font-family:'special';
+    font-size: 20px;
+}
+h3{
+    color: rgb(253, 122, 143);
+    font-family:'heading';
+    font-size: 27px;
+}
+p{
+    color:rgb(83, 32, 40);
+    font-family:'cute';
+    font-size: 23px;
+}
+.important{
+    color:rgb(181, 71, 87);
+    font-family:'special';
+    font-size: 18px;
+}
+
+.character{
+    color:rgb(241, 72, 97);
+    font-family:'special';
+    font-size: 18px;
+}

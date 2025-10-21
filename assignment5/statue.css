@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'p';
+    src: url(../font/play.ttf);
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(58, 58, 173), skyblue);
+    font-family: "Georgia", serif;
+    color: #3a2a1e;
+  }
+  
+  /* Bigger hexagon */
+  .hexagon {
+    width: 505px;
+    height: 346px; /* 600 * 0.57735 */
+    background: linear-gradient(135deg, #b1c1eb, #6b8fbf);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Top triangle */
+  .hexagon::before {
+    content: "";
+    position: absolute;
+    top: -173px; /* half of height * 0.5 */
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 173px solid #9cbdd6;
+  }
+  
+  /* Bottom triangle */
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -173px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-top: 173px solid #6b92bf;
+  }
+  
+  /* Optional text inside */
+  .hexagon p {
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+
+  .blue{
+    color:rgb(58, 58, 173);
+    text-decoration: none;
+    display: inline-block;
+    font-family: "p";
+  }
+
+.blue:hover{
+    transform: translateY(-3px);
+    color:rgb(102, 102, 235);
+    font-size: 20px;
+    font-family: "p";
+}
+ 
+@media screen and (max-width: 600px) {
+  .hexagon {
+    width: 310px;      /* smaller hexagon */
+    height: 205px;
+    padding: 1.5rem;
+  }
+  .hexagon::before {
+    top: -100px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 100px solid #9cbdd6;
+  }
+  .hexagon::after {
+    bottom: -100px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-top: 100px solid #6b92bf;
+  }
+  .hexagon p {
+    font-size: 11px;
+    max-width: 90%;
+  }
+  .blue:hover{
+    transform: translateY(-3px);
+    color:rgb(102, 102, 235);
+    font-size: 13px;
+    font-family: "p";
+}
+}

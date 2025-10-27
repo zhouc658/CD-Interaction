@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'p';
+    src: url(../../font/play.ttf);
+}
+@font-face{
+    font-family: 'heading';
+    src: url(../../font/Pacifico.ttf);
+}
+body {
+    background: url("../../asset/25var/bkg.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: serif;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    overflow: hidden; 
+}
+  h1{
+    margin-top: 200px;
+    font-family:'heading';
+  }
+  h3{
+    font-family:'heading';
+
+  }
+  p{
+    font-family:'p';
+    font-size: 12px;
+    line-height: 1; 
+    margin-bottom: 3rem;
+  }
+  span{
+    /* background-color: rgb(208, 155, 81);
+    border-radius: 20%; */
+    color: #c86117;
+  }
+  .btn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 1px solid #a68960;
+    border-radius: 50px;
+    color: #5a4632;
+    background: linear-gradient(to right, #f9f5ef, #e9e1d5);
+    font-family: 'Georgia', serif;
+  }
+  
+  .btn a:hover {
+    background: #f0e7db;
+    box-shadow: 0 0 12px rgba(166, 137, 96, 0.5);
+    transform: translateY(-3px);
+  }
+  @media (max-width: 600px) {
+      
+      h1{
+        margin-top: 150px;
+      }
+    }
+  

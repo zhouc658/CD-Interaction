@@ -1,0 +1,47 @@
+body {
+    background: url("../../asset/25var/bkg.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: serif;
+    text-align: right;
+    margin-right: 10vw; 
+    margin-top: 15vw;
+    overflow: hidden; 
+  }
+
+ 
+  h1{
+    margin-top: 150px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  .small{
+    display: inline-block;
+    transform: scaleX(1.6);  
+  }
+  .btn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 1px solid #a68960;
+    border-radius: 50px;
+    color: #5a4632;
+    background: linear-gradient(to right, #f9f5ef, #e9e1d5);
+    font-family: 'Georgia', serif;
+  }
+  
+  .btn a:hover {
+    background: #f0e7db;
+    box-shadow: 0 0 12px rgba(166, 137, 96, 0.5);
+    transform: translateY(-3px);
+  }
+  @media (max-width: 600px) {
+    body{
+        margin-top: 150px;
+    }
+      
+    h1{
+      margin-top:50px;
+    }
+  }

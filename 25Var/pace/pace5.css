@@ -1,0 +1,27 @@
+body {
+    font-family: serif;
+    margin-left: 10vw; 
+    margin-top: 10vw;
+  }
+p {
+    letter-spacing: 0.05em;  
+    line-height: 1.7;        
+    text-align: left;         
+    margin-bottom: 2rem;      
+  }
+  .btn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #a68960;
+    border-radius: 50px;
+    color: #5a4632;
+    background: linear-gradient(to right, #f9f5ef, #e9e1d5);
+    font-family: 'Georgia', serif;
+  }
+  
+  .btn a:hover {
+    background: #f0e7db;
+    box-shadow: 0 0 12px rgba(166, 137, 96, 0.5);
+    transform: translateY(-3px);
+  }

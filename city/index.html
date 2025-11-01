@@ -9,14 +9,27 @@
     <title>Self as System</title>
 </head>
 <body>
+    <div id="sketch-holder"></div>
     <h1>People Behavior on the 7 Train</h1>
+    <h3>By Crystal Zhou</h3>
     <p>
-        This project visualizes human behavior inside the 7 train’s first cart, from Flushing–Main St to 74th St–Broadway, between 10:00 and 10:30 AM. I observed and recorded how many passengers were using their phones, not using their phones, or interacting with others. The visualization uses the 7 train line to show how the data changes across stops. Users can drag the cart to their preferred destination—like an actual subway—and at each stop, a bubble appears displaying the data for that station. The size of each station circle grows larger when more people are using their phones and smaller when fewer people are. Users can also press <strong>Enter</strong> to view inside the cart and see a heat map based on the data, offering a clearer visual comparison of different behaviors. A legend on the side helps identify which colors represent each activity.
-      </p>
+        This project visualizes human behavior inside the 7 local train’s first cart, from Flushing–Main St to 74th St–Broadway, between 10:00 and 10:30 AM, over three days of observation (10/17/2025–10/19/2025). I observed and recorded how many passengers were using their phones, not using their phones, or interacting with others. The visualization uses the 7 train line to show how the data changes across stops. Users can drag the cart to their preferred destination—like an actual subway—and at each stop, a bubble appears displaying the data for that station. The size of each station circle grows larger when more people are using their phones and smaller when fewer people are. I also added a light beam around the cart to represent the sound of the environment based on the level of interaction; when there is more interaction, the scene feels livelier and the light beam becomes brighter, while less interaction causes it to dim. Users can press Enter to view inside the cart and see a heat map based on the data, offering a clearer visual comparison of different behaviors. A legend on the side helps identify which colors represent each activity. Users can change the date by toggling the date button, and the data for each day will appear on the line. They can also do this while viewing the map to better compare and contrast the data over the course of three days.      </p>
     
       <p>
         I chose to represent each behavior as a single person rather than a cluster of color to highlight individual presence within a shared space. Every person contributes to the atmosphere of the train cart—the dots collectively form a picture of how people occupy the same environment while performing different actions. The visualization evolved from a simple heat map idea into something more personal, where color represents not just data, but human individuality. It reflects how, even in a public setting, people remain isolated or disconnected, turning the train cart into a microcosm of social behavior within the city.
       </p>
+      <br>
+      <div class="overall-legend">
+        <h3>Interaction Guide</h3>
+        <ul>
+          <li><strong>Station Circle Size</strong> — Indicates how many people are using their phones at that stop.</li>
+          <li><strong>Light Beam Brightness of the train</strong> — Represents the liveliness of the environment (based on interactions).</li>
+          <!-- <li><strong>Enter Key</strong> — View inside the cart to see the heat map of behaviors.</li> -->
+          <li><strong>Drag with Mouse</strong> — Use your mouse to drag the cart to the station you want to view the data of.</li>
+          <li><strong>Date Change Button</strong> — Toggle between Oct 17, Oct 18, and Oct 19 to compare data across days.</li>
+        </ul>
+      </div>
+      
     <script src="script.js"></script>
     <!-- <div class=" item item-8">
         <a href="intro.html" class="btn">Back to My Music Habits Intro</a>

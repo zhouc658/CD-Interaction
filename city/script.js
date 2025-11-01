@@ -6,45 +6,46 @@ let offsetX = 0;     // Mouse offset to keep dragging smooth
 let showHeatmap = false; 
 
 let button; // button for changing date
-let currentDate = "Oct 17";//we start off with this date
+let currentDate = "Oct 17, 2025";//we start off with this date
 
 // data for different days
 let data = {
-"Oct 17": [
-    { name: "Flushing-Main St", x: 100, usingPhone: 25, notUsingPhone: 6, interacting: 4 },
-    { name: "Mets–Willets Point", x: 250, usingPhone: 22, notUsingPhone: 2, interacting: 2 },
-    { name: "111 St", x: 400, usingPhone: 22, notUsingPhone: 2, interacting: 2 },
-    { name: "103 St-Corona Plaza", x: 550, usingPhone: 22, notUsingPhone: 2, interacting: 2 }, //no change becuz this stop does not stop
-    { name: "Juntion Blvd", x: 700, usingPhone: 19, notUsingPhone: 2, interacting: 0 },
-    { name: "90 St-Elmhurst Av", x: 850, usingPhone: 22, notUsingPhone: 4, interacting: 0 },
-    { name: "82 St-Jackson Heights", x: 1000, usingPhone: 28, notUsingPhone: 4, interacting: 0 },
-    { name: "74 St-Broadway", x: 1150, usingPhone: 28, notUsingPhone: 4, interacting: 0 },
+"Oct 17, 2025": [
+    { name: "Flushing-Main St", x: 200, usingPhone: 25, notUsingPhone: 6, interacting: 4 },
+    { name: "Mets–Willets Point", x: 350, usingPhone: 22, notUsingPhone: 2, interacting: 2 },
+    { name: "111 St", x: 500, usingPhone: 22, notUsingPhone: 2, interacting: 2 },
+    { name: "103 St-Corona Plaza", x: 650, usingPhone: 22, notUsingPhone: 2, interacting: 2 }, //no change becuz this stop does not stop
+    { name: "Juntion Blvd", x: 800, usingPhone: 19, notUsingPhone: 2, interacting: 0 },
+    { name: "90 St-Elmhurst Av", x: 950, usingPhone: 22, notUsingPhone: 4, interacting: 0 },
+    { name: "82 St-Jackson Heights", x: 1100, usingPhone: 28, notUsingPhone: 4, interacting: 0 },
+    { name: "74 St-Broadway", x: 1250, usingPhone: 28, notUsingPhone: 4, interacting: 0 },
   ],
-  "Oct 18": [
-    { name: "Flushing-Main St", x: 100, usingPhone: 18, notUsingPhone: 1, interacting: 0 },
-    { name: "Mets–Willets Point", x: 250, usingPhone: 21, notUsingPhone: 3, interacting: 0 },
-    { name: "111 St", x: 400, usingPhone: 23, notUsingPhone: 3, interacting: 0},
-    { name: "103 St-Corona Plaza", x: 550, usingPhone: 23, notUsingPhone: 3, interacting: 0 },
-    { name: "Juntion Blvd", x: 700, usingPhone: 22, notUsingPhone: 3, interacting: 0 },
-    { name: "90 St-Elmhurst Av", x: 850, usingPhone: 20, notUsingPhone: 2, interacting: 0 },
-    { name: "82 St-Jackson Heights", x: 1000, usingPhone: 16, notUsingPhone: 2, interacting: 0 },
-    { name: "74 St-Broadway", x: 1150, usingPhone: 16, notUsingPhone: 2, interacting: 0 },
+  "Oct 18, 2025": [
+    { name: "Flushing-Main St", x: 200, usingPhone: 18, notUsingPhone: 1, interacting: 0 },
+    { name: "Mets–Willets Point", x: 350, usingPhone: 21, notUsingPhone: 3, interacting: 0 },
+    { name: "111 St", x: 500, usingPhone: 23, notUsingPhone: 3, interacting: 0},
+    { name: "103 St-Corona Plaza", x: 650, usingPhone: 23, notUsingPhone: 3, interacting: 0 },
+    { name: "Juntion Blvd", x: 800, usingPhone: 22, notUsingPhone: 3, interacting: 0 },
+    { name: "90 St-Elmhurst Av", x: 950, usingPhone: 20, notUsingPhone: 2, interacting: 0 },
+    { name: "82 St-Jackson Heights", x: 1100, usingPhone: 16, notUsingPhone: 2, interacting: 0 },
+    { name: "74 St-Broadway", x: 1250, usingPhone: 16, notUsingPhone: 2, interacting: 0 },
   ],
   
-  "Oct 19": [
-    { name: "Flushing-Main St", x: 100, usingPhone: 20, notUsingPhone: 5, interacting: 3 },
-    { name: "Mets–Willets Point", x: 250, usingPhone: 22, notUsingPhone: 5, interacting: 3 },
-    { name: "111 St", x: 400, usingPhone: 22, notUsingPhone: 2, interacting: 3 },
-    { name: "103 St-Corona Plaza", x: 550, usingPhone: 22, notUsingPhone: 2, interacting: 3 }, //no change becuz this stop does not stop
-    { name: "Juntion Blvd", x: 700, usingPhone: 23, notUsingPhone: 4, interacting: 0 },
-    { name: "90 St-Elmhurst Av", x: 850, usingPhone: 22, notUsingPhone: 4, interacting: 0 },
-    { name: "82 St-Jackson Heights", x: 1000, usingPhone: 19, notUsingPhone: 3, interacting: 0 },
-    { name: "74 St-Broadway", x: 1150, usingPhone: 19, notUsingPhone: 3, interacting: 0 },
+  "Oct 19, 2025": [
+    { name: "Flushing-Main St", x: 200, usingPhone: 20, notUsingPhone: 5, interacting: 3 },
+    { name: "Mets–Willets Point", x: 350, usingPhone: 22, notUsingPhone: 5, interacting: 3 },
+    { name: "111 St", x: 500, usingPhone: 22, notUsingPhone: 2, interacting: 3 },
+    { name: "103 St-Corona Plaza", x: 650, usingPhone: 22, notUsingPhone: 2, interacting: 3 }, //no change becuz this stop does not stop
+    { name: "Juntion Blvd", x: 800, usingPhone: 23, notUsingPhone: 4, interacting: 0 },
+    { name: "90 St-Elmhurst Av", x: 950, usingPhone: 22, notUsingPhone: 4, interacting: 0 },
+    { name: "82 St-Jackson Heights", x: 1100, usingPhone: 19, notUsingPhone: 3, interacting: 0 },
+    { name: "74 St-Broadway", x: 1250, usingPhone: 19, notUsingPhone: 3, interacting: 0 },
   ]
 }
 
 let trainImg; // variable to hold the image
 let savedHeatPositions = {}; // store fixed random positions per station
+let sevenImg;
 
 let positions = [
     { x: 380, y: 350}, { x: 410, y: 350 }, 
@@ -74,22 +75,24 @@ let positions = [
   
 function preload() {
     trainImg = loadImage("../asset/city/cart.PNG"); // load your image
+    sevenImg= loadImage("../asset/city/seven.PNG")
 }
 function setup() {
     createCanvas(windowWidth, windowHeight);
     
+    
     rectMode(CENTER);        // Draw rectangles from their center
     textAlign(CENTER);       // All text will be horizontally centered
-    trackP = height / 2;     // Place the track in the middle of the canvas
+    trackP = height / 2-50;     // Place the track in the middle of the canvas
     
     stations = data[currentDate];
     trainP = stations[0].x;
     // Dropdown menu
     button = createSelect(); //Creates a dropdown menu
-    button.position(50, 800); 
-    button.option("Oct 17"); //create the options
-    button.option("Oct 18");
-    button.option("Oct 19");
+    button.position(155, 770); 
+    button.option("Oct 17, 2025"); //create the options
+    button.option("Oct 18, 2025");
+    button.option("Oct 19, 2025");
     button.selected(currentDate); //this makes sure or starts with the date in currentDate which is oct17
     button.changed(changeDate); //when button change or have a different option then use changeDate function
 }
@@ -102,13 +105,19 @@ function changeDate() {
 }
 
 function draw() {
-  background(255);
-
+    background('#ffd6e8');
+    textSize(16);
+    fill(0);
+    text("Change the date here:", 150, 110);
+    
   if (!showHeatmap){
+    imageMode(CORNER); // cuz the heatmap is in center mode, so we need this to make sure local text does not get pushed
+    text("Local", 105, height / 2-10);
+    image(sevenImg, 80, height / 2-77, 50, 50);
   // track line
   stroke(0);
   strokeWeight(4);
-  line(100, trackP, width - 50, trackP);
+  line(200, trackP, width - 140, trackP);
 
   // stations circle
   noStroke();
@@ -140,20 +149,19 @@ for (let i = 1; i < stations.length; i++) {
   }
 }
 
-
   // map interaction count (0–5) to glow brightness
   let glowAlpha = map(nearestStation.interacting, 0, 5, 20, 200);
   let glowSize = 50;
 
   noStroke();
-  for (let r = 5; r > 0; r--) {
+  for (let r = 3; r > 0; r--) {
     fill(255, 200, 100, glowAlpha / r); // warm soft yellow tone
-    ellipse(trainP, trackP - 40, glowSize + r * 15); // draw aura
+    ellipse(trainP, trackP - 50, glowSize + r * 15); // draw aura
   }
 
   //train cart
   fill(100);
-  rect(trainP, trackP - 40, 60, 30, 5);  
+  rect(trainP, trackP - 50, 60, 30, 5);  
 
   // data popup bubble
 for (let s of stations) { //going thru each station so that the bubble popup for each station when the train is at it
@@ -162,17 +170,17 @@ for (let s of stations) { //going thru each station so that the bubble popup for
     stroke(0);
     strokeWeight(1.5);
     fill(255);
-    rect(s.x, trackP - 100, 150, 50, 10); // Info box above station
+    rect(s.x, trackP - 110, 150, 50, 10); // Info box above station
     noStroke();
     fill(0);
-    text("People using phone: " + s.usingPhone , s.x, trackP - 110);
-    text("People not using phone: " + s.notUsingPhone , s.x, trackP - 95);
-    text("People interacting: " + s.interacting, s.x, trackP - 80); 
+    text("People using phone: " + s.usingPhone , s.x, trackP - 120);
+    text("People not using phone: " + s.notUsingPhone , s.x, trackP - 105);
+    text("People interacting: " + s.interacting, s.x, trackP - 90); 
     
     // press ENTER TO display the heatmap
     fill(0, 120, 255);
     textSize(14);
-    text("Press ENTER to enter the cart", width / 2, height - 60);
+    text("Press ENTER to enter the cart", width / 2, height - 250);
   }
 }
 } else {
@@ -182,17 +190,16 @@ for (let s of stations) { //going thru each station so that the bubble popup for
 noStroke();
 textAlign(LEFT);
 textSize(14);
-
 // Legend background box
 fill(255, 240);
-rect(width - 180, height / 2 - 60, 150, 100, 10);
+rect(width - 220, height / 2 - 40, 170, 120, 10);
 
 // Legend title
 fill(0);
-text("Legend", width - 160, height / 2 - 80);
+text("Legend", width - 280, height / 2 - 80);
 
 // Colored circles for categories
-let legendX = width - 160;
+let legendX = width - 280;
 let legendY = height / 2 - 60;
 
 fill(255, 120, 0, 180); // orange — using phone
@@ -217,6 +224,7 @@ let currentStation;
       break;
     }
   }
+
 
 if (!currentStation) return;
 drawHeatmapForStation(currentStation);
@@ -271,7 +279,7 @@ function mouseMoved() {
           red(baseColor),
           green(baseColor),
           blue(baseColor),
-          50 / r
+          100 / r
         );
         ellipse(p.x, p.y, 1 + r * 23);
       }
@@ -285,8 +293,8 @@ function mousePressed() {
   if ( //if the mouse is within the train then it can trigger drag being true
     mouseX > trainP - 30 && //mouseX keeps track of the mouse being wihting the width of the train, since the train size is 60 so it is 30 and 30 here
     mouseX < trainP + 30 &&
-    mouseY > trackP - 55 && //this is tracking if the mouse is withing the height between the top and bottom of the train
-    mouseY < trackP - 25
+    mouseY > trackP - 65 && //this is tracking if the mouse is withing the height between the top and bottom of the train
+    mouseY < trackP - 35
   ) {
     dragging = true;
     offsetX = trainP - mouseX;//keeps mouse drag more smooth, it stores how far from the train’s center mouse is clicked, so the train follows  mouse smoothly without jumping when you drag it.

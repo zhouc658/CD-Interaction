@@ -18,15 +18,12 @@ body {
   justify-content: center;
   gap: 150px;
   border-radius: 15px;
-  /* soft rounded corners */
   background: linear-gradient(180deg, #f4f4ff, #cacaff);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* soft shadow for depth */
 }
 
 .nav {
   writing-mode: vertical-rl;
-  /* rotates text 90° clockwise */
   transform: rotate(180deg);
   width: 40px;
   background: none;
@@ -60,9 +57,7 @@ body {
 .section[data-target="art"].on {
   display: flex;
   flex-direction: column;
-  /* stack heading + gallery vertically */
   align-items: center;
-  /* center horizontally */
   margin-top: 80px;
 }
 
@@ -150,9 +145,7 @@ body {
   display: inline-block;
   background: linear-gradient(45deg, #87adfe, #ff77cd);
   border-radius: 8px;
-  /* Make corners more rounded */
   padding: 15px 30px;
-  /* Increase padding for a larger button */
   box-sizing: border-box;
   text-decoration: none;
   color: #fff;
@@ -162,9 +155,65 @@ margin-top: 50px;
 
 .btn:hover {
   background: linear-gradient(45deg, #ff77cd, #87adfe);
-  /* Reverse the gradient */
   box-shadow: 3px 12px 25px rgba(94, 28, 68, 0.25);
-  /* Increase shadow on hover */
   transform: translateY(-3px);
-  /* Slight lift effect */
+}
+
+@media (max-width: 500px) {
+  /* Stack sidebar on top */
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-size: 18px;
+  }
+
+  /* About section stack vertically */
+  .about {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about-img {
+    width: 90%;
+  }
+
+  .aboutMe {
+    width: 90%;
+  }
+
+  /* Titles */
+  .title {
+    font-size: 28px;
+  }
+
+  .title2 {
+    font-size: 24px;
+  }
+
+  /* Gallery */
+  .gallery {
+    gap: 15px;
+  }
+
+  .gallery img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
 }

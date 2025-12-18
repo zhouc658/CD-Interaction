@@ -1,66 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-    display: flex;
-    height: 100vh;
-    font-family: sans-serif;
-  }
-  
-  .sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .nav {
-    background: none;
-    border: none;
-    font-size: 16px;
-    text-align: left;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  .nav.on {
-    font-weight: bold;
-    background-color: #ddd;
-    border-radius: 5px;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 40px;
-    overflow-y: auto;
-  }
-  
-  .section {
-    display: none;
-  }
-  
-  .section.on {
-    display: block;
-  }
-  
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  border-radius: 15px;
+  /* soft rounded corners */
+  background: linear-gradient(180deg, #f4f4ff, #cacaff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* soft shadow for depth */
+}
+
+.nav {
+  writing-mode: vertical-rl;
+  /* rotates text 90° clockwise */
+  transform: rotate(180deg);
+  width: 40px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav.on {
+  font-weight: bold;
+  background-color: #afaffd;
+  border-radius: 5px;
+}
+
+.content {
+  flex: 1;
+  background: linear-gradient(to bottom, rgb(94, 94, 255), lightblue);
+}
+
+.section {
+  display: none;
+}
+
+.section.on {
+  display: block;
+}
+
+/* show only when it is "on" the page */
+.section[data-target="cd"].on,
+.section[data-target="art"].on {
+  display: flex;
+  flex-direction: column;
+  /* stack heading + gallery vertically */
+  align-items: center;
+  /* center horizontally */
+  margin-top: 80px;
+}
+
+.section[data-target="about"].on {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
 .about {
   display: flex;
-  gap: 40px;
-  align-items: center;     
-  justify-content: center; 
-  flex-wrap: wrap;          
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 42px;
+  color: #eeeeee;
+}
+
+.title2 {
+  font-size: 32px;
+  color: #d0dae6;
 }
 
 .about-img {
-  width: 200px;            
-  height: 200px;
+  width: 700px;
+  height: 600px;
   border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .aboutMe {
   max-width: 500px;
   text-align: left;
+  background-color: #ecf9ff;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .contact {
@@ -80,16 +123,48 @@
   text-decoration: underline;
 }
 
-  
-  /* Gallery layout */
-  .gallery {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-  }
-  
+
+/* Gallery layout */
+.gallery {
+  display: flex;
+  /* allow images to go to next row if screen is small */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.gallery img {
+  width: 360px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border-radius: 8px;
+  /* Make corners more rounded */
+  padding: 15px 30px;
+  /* Increase padding for a larger button */
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+margin-top: 50px;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #ff77cd, #87adfe);
+  /* Reverse the gradient */
+  box-shadow: 3px 12px 25px rgba(94, 28, 68, 0.25);
+  /* Increase shadow on hover */
+  transform: translateY(-3px);
+  /* Slight lift effect */
+}

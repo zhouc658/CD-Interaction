@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <nav class="sidebar">
+      <button class="nav on" data-target="about">About Me</button>
+      <button class="nav" data-target="cd">CD Work</button>
+      <button class="nav" data-target="art">Art Work</button>
+    </nav>
+
+ 
+    <main class="content">
+      <!-- About Me Section -->
+      <section class="section active" data-target="about">
+        <div class="about">
+          <img src="/asset/final/me.jpeg" alt="Photo of me" class="about-img">
+          <div class="aboutMe">
+            <h2>Welcome to Crystal's Collection</h2>
+            <p>My name is Crystal Zhou and I'm a Junior student studying at The New School. My major is Design and Technology. I previously studied Studio Art at Stony Brook University. I like working with watercolor and Procreate. Recently, my theme or focus for my art or electronic projects revolve around mental health.
+                I’m a designer who enjoys creative coding, visual storytelling, and digital art. I love experimenting with interactive websites and bringing ideas to life.</p>
+                <div class="contact">
+                  <p><strong>Email:</strong> <a href="mailto:zhouc658@newschool.edu">zhouc658@newschool.edu</a></p>
+                  <p><strong>Phone:</strong> <a href="tel:+19293319855">929-331-9855</a></p>
+                </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CD Work Section -->
+      <section class="section" data-target="cd">
+        <h2>CD Work Gallery</h2>
+        <div class="gallery">
+          <img src="/asset/final/flag.png" alt="CD project 1">
+          <img src="/asset/final/story.png" alt="CD project 2">
+          <img src="/asset/final/shugo.png" alt="CD project 3">
+        </div>
+      </section>
+
+      <!-- Art Work Section -->
+      <section class="section" data-target="art">
+        <h2>Art Work Gallery</h2>
+        <div class="gallery">
+          <img src="/asset/final/Dreams.png" alt="Art project 1">
+          <img src="/asset/final/String.png" alt="Art project 2">
+          <img src="/asset/final/Friend.png" alt="Art project 3">
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

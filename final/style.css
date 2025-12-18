@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nav {
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .nav.on {
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: center;     
+  justify-content: center; 
+  flex-wrap: wrap;          
+}
+
+.about-img {
+  width: 200px;            
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.aboutMe {
+  max-width: 500px;
+  text-align: left;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+  
+  /* Gallery layout */
+  .gallery {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  

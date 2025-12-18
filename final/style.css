@@ -38,7 +38,7 @@
     display: none;
   }
   
-  .section.active {
+  .section.on {
     display: block;
   }
   

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('../asset/quiz/shop.png');
+    background-size: cover;          /* Scale image to cover the screen */
+    background-position: 80% center;     /* Center the image */
+    background-repeat: no-repeat;    /* Don’t repeat the image */
+    text-align: center;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 5vh 10vh 60vh 25vh;
+    grid-template-columns: 18vw 1fr 18vw;
+    }
+    .item{
+        padding: 0.5cm;
+         /* background-color: #fb7185;
+        border: 10px solid #e11d48; */
+    }
+    .item-1{
+        grid-row: 1; /* only take up the first row */
+        grid-column: 2;
+        display: grid;         /* Make this item a grid container */
+        justify-items: center; /* Horizontally center content inside the grid item */
+        align-items: center;   /* Vertically center content inside the grid item */
+        text-align: center; 
+    }
+    .item-2{
+        grid-row: 2; /* only take up the first row */
+        grid-column: 2;
+
+        display: grid;         /* Make this item a grid container */
+        justify-items: center; /* Horizontally center content inside the grid item */
+        align-items: start;   /* Vertically center content inside the grid item */
+        text-align: center; 
+        padding-top: 40px;
+
+    }
+    .quiz-form{
+        grid-row: 3; /* only take up the first row */
+        grid-column: 2;
+
+        display: grid;         /* Make this item a grid container */
+        justify-items: center; /* Horizontally center content inside the grid item */
+        align-items: center;   /* Vertically center content inside the grid item */
+        text-align: center; 
+        padding-bottom: 500px;
+
+    }
+    .item-3 label {
+        display: block;
+        margin: -5px 0;   /* Reduce vertical spacing */
+        line-height: 1.2; /* Reduce line height if needed */
+      }
+      
+    .shop{
+        grid-row: 4; /* only take up the first row */
+        grid-column: 3;
+        padding-right: 50px;
+        padding-bottom: 400px;
+    }
+    .item-4{
+        grid-row: 4; /* only take up the first row */
+        grid-column: 3;
+        padding-right: 300px;
+        padding-top: 50px;
+    }
+    #next {
+        background-image: url('../asset/quiz/basket.png'); /* Path to your image */
+        background-size: contain;
+        background-color: transparent; /* Test only */
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 200px; /* Set width to match the icon */
+        height: 100px; /* Set height to match the icon */
+        border: none;
+        cursor: pointer;
+        padding: 0; /* Remove default padding */
+        transition: transform 0.2s ease;
+        color: transparent;
+        text-shadow: none;  }
+      
+      #next:hover {
+        transform: scale(1.1); /* Slightly enlarge the button on hover */
+      }
+    

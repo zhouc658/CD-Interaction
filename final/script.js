@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     navItems.forEach(item => {
       item.addEventListener('click', () => {
   
-        // 1️⃣ Update nav buttons
+        // Update nav buttons
         navItems.forEach(nav => nav.classList.remove('on'));
         item.classList.add('on');
   
-        // 2️⃣ Update content sections
+        // Update content sections
         sections.forEach(section => section.classList.remove('on'));
         const targetSection = Array.from(sections)
           .find(section => section.dataset.target === item.dataset.target);

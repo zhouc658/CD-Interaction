@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What Kind of Toy Are You Into?</title>
+  <link rel="stylesheet" href="question.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item title">
+      <h1>Which vibe do you prefer?</h1>
+    </div>
+    <form class="quiz-form" 
+    id="quizForm">
+
+      <div class="item item-1">
+        <label>
+          <input type="radio" name="q2" value="cute">
+          <img src="../asset/quiz/cuteVibe.png" alt="Cute Toy" class="answer-image">
+          <span class="answer-text">Cute, adorable, and soft</span>
+        </label>
+      </div>
+
+      <div class="item cool">  
+        <label>
+          <input type="radio" name="q2" value="cool">
+          <img src="../asset/quiz/coolVibe.png" alt="Cool Toy" class="answer-image">
+          <span class="answer-text">Cool, chaotic, and robotic</span>
+          </label>
+      </div>
+
+      <div class="item elegant">  
+        <label>
+          <input type="radio" name="q2" value="elegant">
+          <img src="../asset/quiz/elegantVibe.png" alt="Cool Toy" class="answer-image">
+          <span class="answer-text">Elegant, calm, and fairylike</span> 
+        </label>
+      </div>
+    </form>
+
+    <div class="item item-2">
+      <button id="next" data-next="question3.html">Next</button>    
+    </div>
+</div>
+  <script src="quiz.js"></script>
+</body>
+</html>

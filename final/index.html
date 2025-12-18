@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -16,7 +18,7 @@
       <button class="nav" data-target="art">Art Work</button>
     </nav>
 
- 
+
     <main class="content">
       <h2 class="title">Welcome to Crystal's Collection</h2>
       <!-- About Me Section -->
@@ -25,23 +27,33 @@
         <div class="about">
           <img src="../asset/final/me.jpeg" alt="Photo of me" class="about-img">
           <div class="aboutMe">
-            <p>My name is Crystal Zhou and I'm a Junior student studying at The New School. My major is Design and Technology. I previously studied Studio Art at Stony Brook University. I like working with watercolor and Procreate. Recently, my theme or focus for my art or electronic projects revolve around mental health.
-                I’m a designer who enjoys creative coding, visual storytelling, and digital art. I love experimenting with interactive websites and bringing ideas to life.</p>
-                <div class="contact">
-                  <p><strong>Email:</strong> <a href="mailto:zhouc658@newschool.edu">zhouc658@newschool.edu</a></p>
-                  <p><strong>Phone:</strong> <a href="tel:+19293319855">929-331-9855</a></p>
-                </div>
+            <p>My name is Crystal Zhou and I'm a Junior student studying at The New School. My major is Design and
+              Technology. I previously studied Studio Art at Stony Brook University. I like working with watercolor and
+              Procreate. Recently, my theme or focus for my art or electronic projects revolve around mental health.
+              I’m a designer who enjoys creative coding, visual storytelling, and digital art. I love experimenting with
+              interactive websites and bringing ideas to life.</p>
+            <div class="contact">
+              <p><strong>Email:</strong> <a href="mailto:zhouc658@newschool.edu">zhouc658@newschool.edu</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+19293319855">929-331-9855</a></p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- CD Work Section -->
-      <section class="section" data-target="cd">
+      <section class="section" data-target="cd" id="cd">
         <h2 class="title2">CD Work Gallery</h2>
         <div class="gallery">
-          <img src="../asset/final/flag.png" alt="CD project 1">
-          <img src="../asset/final/story.png" alt="CD project 2">
-          <img src="../asset/final/shugo.png" alt="CD project 3">
+          <a href="../flag/flag.html">
+            <img src="../asset/final/flag.png" alt="Sketch 1">
+          </a>
+          <a href="../assignment5/index.html">
+            <img src="../asset/final/story.png" alt="Sketch 2">
+          </a>
+
+          <a href="../assignment4/index.html">
+            <img src="../asset/final/shugo.png" alt="Sketch 3">
+          </a>
         </div>
         <a href="cd.html" class="btn">See More Works</a>
 
@@ -51,9 +63,17 @@
       <section class="section" data-target="art">
         <h2 class="title2">Art Work Gallery</h2>
         <div class="gallery">
+          <a href="./Dreams.html">
           <img src="../asset/final/Dreams.png" alt="Art project 1">
+        </a>
+
+        <a href="./String.html">
           <img src="../asset/final/String.png" alt="Art project 2">
+        </a>
+
+        <a href="./Friend.html">
           <img src="../asset/final/Friend.png" alt="Art project 3">
+          </a>
         </div>
         <a href="art.html" class="btn">See More Works</a>
       </section>
@@ -63,4 +83,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
